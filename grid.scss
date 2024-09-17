@@ -1,0 +1,13 @@
+@mixin grid-template($row-content-count: 1) {
+    grid-template-columns: repeat($row-content-count, 1fr);
+}
+
+.grid {
+    @for $i from 1 through 10 {
+        &-#{$i} {
+            display: grid;
+            @include grid-template($i);
+            gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+$min-sizes: 100px, 200px, 400px, 800px;
+
+@each $size in $min-sizes {
+    .icon-1 {
+        @debug "a";
+    }
+}
